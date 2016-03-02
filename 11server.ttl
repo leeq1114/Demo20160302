@@ -1,0 +1,19 @@
+username = 'nsd_ri'
+passwd = 'nsd_ri'
+hostname = '168.87.98.198'
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+msg = hostname
+strconcat msg ':22 /ssh /auth=password /user='
+strconcat msg username
+strconcat msg ' /passwd='
+strconcat msg passwd
+
+connect msg
+
+wait "$"
+sendln "ssh 30.169.92.40 -l nsd_devuser"
+wait "password:"
+sendln "hptepco2015"
+
