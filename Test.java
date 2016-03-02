@@ -133,14 +133,15 @@ public class Test {
 //        System.out.println(-43261596>>>20);
 //        System.out.println(1l<<62);
         
-        Locale locale1 = new Locale("zh", "C");
+        Locale locale1 = new Locale("en", "US");
         ResourceBundle bundle = ResourceBundle.getBundle("ttt",locale1);
         System.out.println(bundle.getString("name"));
         
+        Locale locale2 = new Locale("ja", "JP");
         ResourceBundle bundle2 = ResourceBundle.getBundle("ttt",Locale.getDefault());
         System.out.println(bundle2.getString("name"));
         
-        Locale locale3 = new Locale("z", "CN");
+        Locale locale3 = new Locale("zh", "CN");
         ResourceBundle bundle3 = ResourceBundle.getBundle("ttt",locale3);
         System.out.println(bundle3.getString("name"));
         
