@@ -1,0 +1,13 @@
+//struts的使用方法1  2019/01/16 psn
+//init()是初期方法，input()是发生error后的处理方法,方法内的画面项目的设定要注意。
+//比如，需要在表单里追加2列（都是下拉列表项目）。
+//init()里需要对项目list进行设定。同样地，input()里也需要追加。如果input()没有追加，会发生如下的异常。
+
+Caused by: Infinite recursion detected: [//Wma182!save, //Wma182Input, //logininit, //logininit] - [unknown location]
+	at com.opensymphony.xwork2.ActionChainResult.execute(ActionChainResult.java:203)
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:362)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:266)
+	at com.cnet.fw.common.action.LoggingInterceptor.intercept(LoggingInterceptor.java:64)
+	... 98 more
+  
+  
