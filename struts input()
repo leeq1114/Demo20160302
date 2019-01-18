@@ -11,3 +11,5 @@ Caused by: Infinite recursion detected: [//Wma182!save, //Wma182Input, //loginin
 	... 98 more
   
   
+//2019/01/17 psn 追加
+//不仅仅是error处理的input(),所有画面会刷新的方法都需要追加，比如sort().
